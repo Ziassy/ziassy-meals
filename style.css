@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lobster&family=Montserrat&family=Oswald:wght@500&family=Pacifico&display=swap");
+@import 'css/header.css';
+@import 'css/about.css';
+@import 'css/card-recipes.css';
+@import 'css/card-article.css';
+@import 'css/videos.css';
+@import 'css/galery.css';
+@import 'css/profile.css';
+
 html {
   scroll-behavior: smooth;
 }
@@ -12,74 +20,6 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
-}
-
-header {
-  height: 600px;
-  background-image: url(assets/img/yum.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-}
-
-nav {
-  width: 100%;
-  height: 10vh;
-  background-color: rgba(0, 0, 0, 0.5);
-  position: relative;
-  position: fixed;
-}
-
-.logo h4 {
-  position: absolute;
-  margin-top: 20px;
-  left: 15%;
-  font-size: 16px;
-  font-family: "Pacifico", serif;
-  color: white;
-}
-
-.nav-link {
-  display: flex;
-  list-style: none;
-  width: 50%;
-  height: 100%;
-  justify-content: space-around;
-  align-items: center;
-  margin-left: auto;
-}
-
-.nav-link li a {
-  text-decoration: none;
-  font-size: 16px;
-  color: white;
-  font-family: "Lobster", sans-serif;
-}
-
-#active {
-  border: 1px solid white;
-  padding: 5px;
-  border-radius: 5px;
-}
-
-.nav-link li a:hover, .judul:hover {
-  font-weight: bold;
-}
-
-div.introduce {
-  width: 400px;
-  position: absolute;
-  margin: 200px auto auto 40px;
-}
-
-div.introduce h1 {
-  color: rgb(255, 230, 230);
-}
-
-div.introduce p {
-  color: rgb(233, 230, 230);
-  text-align: center;
 }
 
 .card-main {
@@ -107,12 +47,6 @@ h3 {
   font-style: italic;
 }
 
-p.about {
-  font-size: 20px;
-  margin-bottom: 10px;
-  font-family: "Pacifico", Times, serif;
-}
-
 p {
   font-size: 14px;
 }
@@ -121,11 +55,15 @@ table {
   font-size: 16px;
 }
 
-.judul, table, p {
+.judul,
+table,
+p {
   font-family: "bree serif", Times, serif;
 }
 
-.profile-name, p, table {
+.profile-name,
+p,
+table {
   color: rgb(235, 230, 230);
 }
 
@@ -133,319 +71,6 @@ table {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-.card-recipes {
-  width: 330px;
-  border: 2px solid rgba(230, 224, 224, 0.667);
-  border-radius: 20px;
-  background-color: #ffffff;
-  overflow: hidden;
-  margin: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.5s ease;
-}
-
-.card-recipes:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
-}
-
-.featured-image {
-  width: 100%;
-  height: 150px;
-}
-
-.card-recipes img:hover {
-  transform: scale(1.03);
-}
-
-.card-recipes .details {
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-bottom: 20px;
-}
-
-.checked {
-  color: orange;
-}
-
-.judul {
-  color: black;
-  font-size: 20px;
-}
-
-p.label {
-  font-size: 12px;
-  margin-top: 20px;
-  color: rgb(146, 144, 144);
-}
-
-.flex-grid {
-  display: flex;
-  justify-content: center;
-}
-
-#grid {
-  display: grid;
-  align-items: center;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.card-articles {
-  display: grid;
-  width: 300px;
-  grid-template-columns: 300px;
-  grid-template-rows: 180px 180px 80px;
-  grid-template-areas: "image" "text" "stats";
-  border-radius: 18px;
-  background: white;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
-  font-family: roboto;
-  text-align: center;
-  transition: 0.5s ease;
-  cursor: pointer;
-  margin: 20px 30px;
-}
-
-.card-image {
-  grid-area: image;
-}
-
-.card-text {
-  grid-area: text;
-}
-
-.card-stats {
-  grid-area: stats;
-}
-
-.card-image .img-one, .img-two, .img-three {
-  grid-area: image;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  background-size: cover;
-}
-
-.img-one {
-  background-image: url("assets/img/dinner.jpg");
-}
-
-.img-two {
-  background-image: url(assets/img/brownies.png);
-}
-
-.img-three {
-  background-image: url(assets/img/candy.jpg);
-}
-
-.card-text {
-  grid-area: text;
-  margin: 25px;
-}
-
-.card-text .date {
-  color: rgb(255, 7, 110);
-  font-size: 13px;
-}
-
-.card-text p {
-  color: grey;
-  font-size: 12px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: italic;
-  margin: 10px auto;
-}
-
-.card-stats {
-  grid-area: stats;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-}
-
-.satu {
-  background: rgb(255, 7, 110);
-}
-
-.dua {
-  background: green;
-}
-
-.tiga {
-  background-color: blue;
-}
-
-.card-stats .stat {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  color: white;
-  padding: 10px;
-}
-
-.card-articles:hover {
-  transform: scale(1.05);
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
-}
-
-iframe {
-  width: 300px;
-  border-radius: 10px;
-  margin: 20px auto;
-  position: relative;
-}
-
-.card-galery {
-  width: 68%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  padding: 20px;
-  margin: 20px 10px;
-  float: left;
-}
-
-.mySlides {
-  display: none;
-}
-
-img {
-  vertical-align: middle;
-  width: 100%;
-  height: 400px;
-}
-
-.slideshow-container {
-  max-width: 800px;
-  position: relative;
-  margin: 30px auto 0 auto;
-}
-
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 12px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  height: 40px;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  bottom: 0;
-}
-
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px 40px 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-.card-profile {
-  user-select: none;
-  background: rgb(255, 0, 76);
-  color: #b3b8cd;
-  border-radius: 5px;
-  width: 350px;
-  text-align: center;
-  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.75);
-  float: right;
-  margin: 20px 10px;
-}
-
-.cover-photo {
-  background: url(assets/img/mountain.jpg);
-  height: 160px;
-  width: 100%;
-  border-radius: 5px 5px 0 0;
-}
-
-.profile {
-  height: 120px;
-  width: 120px;
-  border-radius: 50%;
-  margin: 93px 0 0 -175px;
-  border: 1px solid #1f1a32;
-  padding: 7px;
-  background: #292343;
-}
-
-.profile-name {
-  font-size: 28px;
-  font-weight: bold;
-  margin: 0 0 20px 120px;
-  font-family: "Pacifico", Times, serif;
-}
-
-table {
-  margin: 30px auto;
-  padding: 10px;
-}
-
-.skils {
-  font-weight: bold;
-}
-
-.card-profile i {
-  padding-left: 20px;
-  font-size: 20px;
-  margin-bottom: 20px;
-  cursor: pointer;
-  transition: 0.5s;
-  color: rgb(165, 161, 161);
-}
-
-.card-profile i:hover {
-  color: #03bfbc;
-}
-
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
 }
 
 .clear {
@@ -464,6 +89,7 @@ footer {
   from {
     opacity: 0.4;
   }
+
   to {
     opacity: 1;
   }
@@ -473,6 +99,7 @@ footer {
   from {
     opacity: 0.4;
   }
+
   to {
     opacity: 1;
   }
@@ -483,6 +110,7 @@ footer {
     width: 65%;
     margin-right: 20px;
   }
+
   aside .card-profile {
     width: 350px;
   }
@@ -492,19 +120,26 @@ footer {
   nav {
     height: 5vh;
   }
+
   #grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
   #Galery .card-galery {
     width: 60%;
   }
+
   aside .card-profile {
     width: 350px;
   }
+
   img {
     height: 300px;
   }
-  .prev, .next, .text {
+
+  .prev,
+  .next,
+  .text {
     font-size: 11px;
   }
 }
@@ -513,20 +148,27 @@ footer {
   nav {
     height: 10vh;
   }
+
   #grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .card-galery {
     width: 60%;
     margin: 30px 10px;
   }
+
   aside .card-profile {
     width: 300px;
   }
+
   img {
     height: 300px;
   }
-  .prev, .next, .text {
+
+  .prev,
+  .next,
+  .text {
     font-size: 11px;
   }
 }
@@ -536,6 +178,7 @@ footer {
     width: 95%;
     margin-right: 20px;
   }
+
   aside .card-profile {
     width: 350px;
     margin-right: 30%;
@@ -547,6 +190,7 @@ footer {
     width: 95%;
     margin-right: 20px;
   }
+
   aside .card-profile {
     width: 350px;
     margin-right: 30%;
@@ -557,12 +201,14 @@ footer {
   nav {
     height: 5vh;
   }
+
   .line {
     width: 30px;
     height: 3px;
     background-color: white;
     margin: 5px;
   }
+
   .hamburger {
     position: absolute;
     cursor: pointer;
@@ -570,6 +216,7 @@ footer {
     transform: translate(-5%, 50%);
     z-index: 2;
   }
+
   .nav-link {
     background-color: rgba(0, 0, 0, 0.7);
     height: 100vh;
@@ -581,36 +228,49 @@ footer {
     -webkit-clip-path: circle(0 at 90% -10%);
     transition: all 1s ease-out;
   }
+
   .nav-link.open {
     clip-path: circle(1000px at 90% -10%);
     -webkit-clip-path: circle(1000px at 90% -10%);
   }
+
   .landing {
     flex-direction: column;
   }
+
   .card {
     width: 80%;
   }
+
   .logo h4 {
     margin-top: 15px;
   }
+
   article .card-main {
     margin-right: 20px;
   }
+
   #grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  #Galery .card-galery, .card-main {
+
+  #Galery .card-galery,
+  .card-main {
     width: 100%;
   }
+
   aside .card-profile {
     width: 330px;
     margin-top: 20px;
   }
+
   .mySlides img {
     height: 250px;
   }
-  .prev, .next, .text {
+
+  .prev,
+  .next,
+  .text {
     font-size: 11px;
   }
 }
@@ -619,17 +279,21 @@ footer {
   nav {
     height: 10vh;
   }
+
   #grid {
     grid-template-columns: repeat(1, 1fr);
   }
+
   #Galery .card-galery {
     width: 95%;
     margin-right: 20px;
   }
+
   aside .card-profile {
     width: 370px;
     margin-right: 50px;
   }
+
   .mySlides img {
     height: 250px;
   }
@@ -639,20 +303,25 @@ footer {
   nav {
     height: 7vh;
   }
+
   div.introduce {
     width: 340px;
     margin-left: 10;
   }
+
   .card-main {
     width: 95%;
   }
+
   #Galery .card-galery {
     width: 95%;
   }
+
   aside .card-profile {
     width: 350px;
     margin: 20px 30px;
   }
+
   .mySlides img {
     height: 250px;
   }
@@ -662,13 +331,16 @@ footer {
   nav {
     height: 7vh;
   }
+
   #Galery .card-galery {
     width: 95%;
   }
+
   aside .card-profile {
     width: 390px;
     margin: 20px 10px;
   }
+
   .mySlides img {
     height: 250px;
   }
@@ -678,19 +350,26 @@ footer {
   nav {
     height: 7vh;
   }
+
   div.introduce {
     width: 340px;
     margin-left: 10px;
   }
-  #Galery .card-galery, .card-main {
+
+  #Galery .card-galery,
+  .card-main {
     width: 95%;
   }
+
   aside .card-profile {
     margin: 10px 0;
   }
-  #Galery .card-galery, aside .card-profile {
+
+  #Galery .card-galery,
+  aside .card-profile {
     margin-top: 0;
   }
+
   .mySlides img {
     height: 200px;
   }
@@ -700,17 +379,23 @@ footer {
   nav {
     height: 10vh;
   }
+
   #Galery .card-galery {
     width: 95%;
   }
+
   aside .card-profile {
     width: 320px;
     margin-right: 20px;
   }
+
   .mySlides img {
     height: 200px;
   }
-  .prev, .next, .text {
+
+  .prev,
+  .next,
+  .text {
     font-size: 11px;
   }
 }
@@ -719,25 +404,33 @@ footer {
   nav {
     height: 10vh;
   }
+
   div.introduce {
     width: 300px;
     margin-left: 10px;
   }
+
   .card-main {
     margin: 20px 0;
     width: 100%;
   }
+
   #Galery .card-galery {
     width: 100%;
   }
+
   aside .card-profile {
     width: 320px;
     margin: 10px 0;
   }
+
   .mySlides img {
     height: 200px;
   }
-  .prev, .next, .text {
+
+  .prev,
+  .next,
+  .text {
     font-size: 11px;
   }
 }
