@@ -14,32 +14,37 @@
 - [Pauziah](https://github.com/ziassy)
 
 ### Screenshot
-![main](screenshot/ziassy-meals.gif)
+![main](screenshoot/ziassy-meals.gif)
 
 __Home__
 
 
-![Home](screenshot/home.JPG)
+![Home](screenshoot/home.JPG)
 
 __Recipes__
 
 
-![Detail](screenshot/recipe.JPG)
+![recipes](screenshoot/recipes.JPG)
 
 __Articles__
 
 
-![favorite](screenshot/article.JPG)
+![articles](screenshoot/article.JPG)
 
 __Recipe Videos__
 
 
-![Review](screenshot/videos.JPG)
+![tutorial](screenshoot/videos.JPG)
 
 __About__
 
 
-![Review](screenshot/about.JPG)
+![about](screenshoot/about.JPG)
+
+__Review__
+
+
+![Review](screenshoot/review.JPG)
 
 ---
 
